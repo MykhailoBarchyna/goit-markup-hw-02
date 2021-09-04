@@ -4,6 +4,13 @@
   --primary-white-color: #ffffff;
   --primary-dark-color: #2f303a;
   --accent-color: #2196f3;
+  --primary-text-size: 14px;
+  --secondary-text-size: 16px;
+  --primary-title-size: 36px;
+  --secondary-title-size: 16px;
+  --primary-title-font-weight: 700;
+  --secondary-title-font-weight: 500;
+  --primary-text-font-weight: 400;
 }
 
 /* WebStudio page */
@@ -21,7 +28,7 @@ body {
   font-family: Raleway, sans-serif;
   font-style: normal;
   font-size: 26px;
-  font-weight: 700;
+  font-weight: var(--primary-title-font-weight);
   line-height: 1.2;
   letter-spacing: 0.03em;
   text-decoration: none;
@@ -41,8 +48,8 @@ body {
 }
 
 .nav-list-item {
-  font-weight: 500;
-  font-size: 14px;
+  font-weight: var(--secondary-title-font-weight);
+  font-size: var(--primary-text-size);
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
@@ -63,8 +70,8 @@ body {
 }
 
 .header-contacts-item {
-  font-weight: 500;
-  font-size: 14px;
+  font-weight: var(--secondary-title-font-weight);
+  font-size: var(--primary-text-size);
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
@@ -98,8 +105,8 @@ body {
 }
 
 .hero > .button {
-  font-weight: 700;
-  font-size: 16px;
+  font-weight: var(--primary-title-font-weight);
+  font-size: var(--secondary-text-size);
   line-height: 1.87;
   letter-spacing: 0.06em;
   color: var(--primary-white-color);
@@ -112,15 +119,15 @@ body {
 }
 
 .advantages-list-title {
-  font-weight: 700;
-  font-size: 14px;
+  font-weight: var(--primary-title-font-weight);
+  font-size: var(--primary-text-size);
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
 
 .advantages-list-text {
-  font-size: 14px;
+  font-size: var(--primary-text-size);
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
@@ -128,8 +135,8 @@ body {
 
 /* Activities */
 .activities-title {
-  font-weight: 700;
-  font-size: 36px;
+  font-weight: var(--primary-title-font-weight);
+  font-size: var(--primary-title-size);
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
@@ -145,8 +152,8 @@ body {
 }
 
 .team-title {
-  font-weight: 700;
-  font-size: 36px;
+  font-weight: var(--primary-title-font-weight);
+  font-size: var(--primary-title-size);
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
@@ -157,15 +164,15 @@ body {
 }
 
 .employee {
-  font-weight: 500;
-  font-size: 16px;
+  font-weight: var(--secondary-title-font-weight);
+  font-size: var(--secondary-title-size);
   line-height: 1.19;
   letter-spacing: 0.03em;
 }
 
 .position {
-  font-weight: 400;
-  font-size: 16px;
+  font-weight: var(--primary-text-font-weight);
+  font-size: var(--secondary-text-size);
   line-height: 1.19px;
   letter-spacing: 0.03em;
 
@@ -186,7 +193,7 @@ address {
   font-family: Raleway, sans-serif;
   font-style: normal;
   font-size: 26px;
-  font-weight: 700;
+  font-weight: var(--primary-title-font-weight);
   line-height: 1.2;
   letter-spacing: 0.03em;
   text-decoration: none;
@@ -199,8 +206,8 @@ address {
 }
 
 .footer-location {
-  font-weight: 400;
-  font-size: 14px;
+  font-weight: var(--primary-text-font-weight);
+  font-size: var(--primary-text-size);
   line-height: 1.71;
   letter-spacing: 0.03em;
 
@@ -211,8 +218,8 @@ address {
 .footer-phone-link {
   text-decoration: none;
 
-  font-weight: 400;
-  font-size: 14px;
+  font-weight: var(--primary-text-font-weight);
+  font-size: var(--primary-text-size);
   line-height: 1.71;
   letter-spacing: 0.03em;
 
