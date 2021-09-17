@@ -10,7 +10,6 @@
   --secondary-title-size: 16px;
   --primary-title-font-weight: 700;
   --secondary-title-font-weight: 500;
-  --primary-text-font-weight: 400;
 }
 
 body {
@@ -18,8 +17,6 @@ body {
   color: var(--title-text-color);
 
   font-family: Roboto, sans-serif;
-  font-style: normal;
-  font-weight: var(--primary-text-font-weight);
 }
 
 /* Header container */
@@ -61,6 +58,10 @@ body {
 
 .nav-list-link:hover,
 .nav-list-link:focus {
+  color: var(--accent-color);
+}
+
+.current {
   color: var(--accent-color);
 }
 
@@ -106,13 +107,14 @@ body {
   text-transform: uppercase;
 }
 
-.hero > .button {
+.hero-button {
   font-weight: var(--primary-title-font-weight);
   font-size: var(--secondary-text-size);
   line-height: 1.87;
   letter-spacing: 0.06em;
   color: var(--primary-white-color);
   background: var(--accent-color);
+  cursor: pointer;
 }
 
 /* Advantages */
@@ -204,7 +206,6 @@ footer {
 
 .footer-location {
   font-style: normal;
-  font-weight: var(--primary-text-font-weight);
   font-size: var(--primary-text-size);
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -216,7 +217,6 @@ footer {
 .footer-mail-link,
 .footer-phone-link {
   font-style: normal;
-  font-weight: var(--primary-text-font-weight);
   font-size: var(--primary-text-size);
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -237,7 +237,7 @@ footer {
   list-style: none;
 }
 
-.filters-list-item > .button {
+.filter-button {
   background-color: #f5f4fa;
 
   font-weight: var(--secondary-title-font-weight);
@@ -248,10 +248,11 @@ footer {
   letter-spacing: 0.03em;
 }
 
-.filters-list-item > .button:hover,
-.filters-list-item > .button:focus {
+.filter-button:hover,
+.filter-button:focus {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
+  cursor: pointer;
 }
 
 .projects-list {
@@ -271,4 +272,11 @@ footer {
   letter-spacing: 0.03em;
 
   color: var(--primary-text-color);
+}
+
+/* visually-hidden */
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
 }
